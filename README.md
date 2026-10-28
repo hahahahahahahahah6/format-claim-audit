@@ -16,9 +16,9 @@ static evidence would be too fuzzy.
 Install from the local wheel or source distribution:
 
 ```sh
-python -m pip install dist/format_claim_audit-0.1.0-py3-none-any.whl
+python3 -m pip install dist/format_claim_audit-0.1.0-py3-none-any.whl
 format-claim-audit ./project
-python -m format_claim_audit ./project --json
+python3 -m format_claim_audit ./project --json
 format-claim-audit ./project --fail-on HIGH --verbose
 format-claim-audit ./project --ignore documented-format-unsupported,format-only-in-tests
 format-claim-audit --version
@@ -109,8 +109,8 @@ may be missed. This is a review aid, not proof of format support.
 ## Development
 
 ```sh
-PYTHONPATH=src python -m unittest discover -s tests -v
-python -m build
+PYTHONPATH=src python3 -m unittest discover -s tests -v
+python3 -m build
 ```
 
 The tests include good, bad and test-only fixtures, filesystem exclusions,
